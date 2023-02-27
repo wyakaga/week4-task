@@ -28,16 +28,23 @@ closeIcons.forEach((icon, index) =>
 	})
 );
 
+
 toggler.addEventListener("click", () => {
-	rightNav.classList.toggle("flex");
-	rightNav.classList.toggle("absolute");
-	rightNav.classList.toggle("bg-white");
-	rightNav.classList.toggle("z-10");
-	rightNav.classList.toggle("w-full");
-	rightNav.classList.toggle("p-5");
-	rightNav.classList.toggle("gap-8");
-	rightNav.classList.toggle("rounded-lg");
-	rightNav.classList.toggle("shadow-lg");
-	rightNav.classList.toggle("left-[0px]");
-	rightNav.classList.toggle("top-[100px]");
+	let classArray = [
+		"flex",
+		"absolute",
+		"bg-white",
+		"z-10",
+		"w-full",
+		"p-5",
+		"gap-8",
+		"rounded-lg",
+		"shadow-lg",
+		"left-[0px]",
+		"top-[100px]",
+	];
+	
+	for (const cl of classArray) {
+		rightNav.classList.toggle(cl);
+	}
 });

@@ -36,21 +36,22 @@ let msgContent = `
 <p>your gender is ${genderRadio.value}</p>
 <p>your birthday is ${dateInput.value}</p>`;
 
-let classArray = [
-	"flex",
-	"absolute",
-	"bg-white",
-	"z-10",
-	"w-full",
-	"p-5",
-	"gap-8",
-	"rounded-lg",
-	"shadow-lg",
-	"left-[0px]",
-	"top-[100px]",
-];
 
 toggler.addEventListener("click", () => {
+	let classArray = [
+		"flex",
+		"absolute",
+		"bg-white",
+		"z-10",
+		"w-full",
+		"p-5",
+		"gap-8",
+		"rounded-lg",
+		"shadow-lg",
+		"left-[0px]",
+		"top-[100px]",
+	];
+	
 	for (const cl of classArray) {
 		rightNav.classList.toggle(cl);
 	}

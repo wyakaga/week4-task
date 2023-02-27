@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Login</title>
+		<link rel="stylesheet" href="../css/login.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Rubik:wght@400;500;600;700;800;900&display=swap"
+			rel="stylesheet"
+		/>
+		<script defer src="../js/login.js"></script>
+	</head>
+	<body>
+		<div class="body-wrapper">
+			<section class="image-holder"></section>
+			<section class="text-holder">
+				<header>
+					<div class="header-wrapper">
+						<a href="#" class="brand">
+							<img
+								src="../assets/coffee-shop-logo.webp"
+								alt="coffee shop logo"
+							/>
+							Coffee Shop
+						</a>
+						<h2>Login</h2>
+					</div>
+				</header>
+				<main>
+					<div class="form-wrapper">
+						<form>
+							<div class="form-content-wrapper email-wrapper">
+								<label for="email-address">Email Address :</label>
+								<input
+									type="email"
+									name="email-address"
+									placeholder="Enter your email address"
+									id="email-input"
+								/>
+							</div>
+							<div class="form-content-wrapper pwd-wrapper">
+								<label for="password">Password :</label>
+								<input
+									type="password"
+									name="password"
+									placeholder="Enter your password"
+									id="pwd-input"
+								/>
+							</div>
+							<div class="forgot-pwd">
+								<a href="#"> Forgot password? </a>
+							</div>
+							<div class="button-wrapper">
+								<button type="button" id="login-btn">Login</button>
+								<button id="google-login">
+									<img src="../assets/google-logo.svg" alt="google logo" />
+									Login with Google
+								</button>
+							</div>
+						</form>
+						<div class="signup-wrapper">
+							<div class="question-wrapper">
+								<p id="line"></p>
+								<p id="question">Don't have an account?</p>
+								<p id="line"></p>
+							</div>
+							<button>Sign Up</button>
+						</div>
+					</div>
+				</main>
+				<footer>
+					<div class="footer-wrapper">
+						<div class="identity">
+							<div class="brand">
+								<img
+									src="../assets/coffee-shop-logo.webp"
+									alt="coffee shop logo"
+								/>
+								Coffee Shop
+							</div>
+							<p>
+								Coffee Shop is a store that sells some<br />good meals, and
+								especially coffee. We<br />provide high quality beans
+							</p>
+							<div class="socials">
+								<a href="https://www.facebook.com">
+									<img
+										src="../assets/facebook-circle.svg"
+										alt="icon facebook"
+									/>
+								</a>
+								<a href="https://www.twitter.com">
+									<img src="../assets/twitter.svg" alt="icon twitter" />
+								</a>
+								<a href="https://www.instagram.com">
+									<img
+										src="../assets/instagram-circle.svg"
+										alt="icon instagram"
+									/>
+								</a>
+							</div>
+							<p id="copyright">&copy2020CoffeeStore</p>
+						</div>
+						<div class="links">
+							<div class="products">
+								<div class="title">Product</div>
+								<div class="list">
+									<li><a href="#">Download</a></li>
+									<li><a href="#">Pricing</a></li>
+									<li><a href="#">Locations</a></li>
+									<li><a href="#">Countries</a></li>
+									<li><a href="#">Blog</a></li>
+								</div>
+							</div>
+							<div class="engages">
+								<div class="title">Engage</div>
+								<div class="list">
+									<li><a href="#">Coffee Shop?</a></li>
+									<li><a href="#">FAQ</a></li>
+									<li><a href="#">About Us</a></li>
+									<li><a href="#">Privacy Policy</a></li>
+									<li><a href="#">Terms of Service</a></li>
+								</div>
+							</div>
+						</div>
+					</div>
+				</footer>
+			</section>
+			<section class="modal-overlay hidden"></section>
+			<section class="modal-content hidden">
+				<div class="modal-dialogue flex">
+					<div class="modal-msg"></div>
+					<div class="modal-btn">
+						<button id="modal-btn-close">OK</button>
+					</div>
+				</div>
+			</section>
+		</div>
+	</body>
+</html>
+
+<!-- TODO : [memperbaiki footer agar sesuai figma, menambah hamburger menu (?), memperbaiki skor lighthouse] -->

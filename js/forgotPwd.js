@@ -35,7 +35,7 @@ const openButtonFn = () => {
 
   overlay.classList.remove("hidden");
 	dialogue.classList.remove("hidden");
-	msgContent = document.createTextNode(`Sent to ${emailValue}!`);
+	msgContent = document.createTextNode(`Email has been sent to ${emailValue}`);
 	msg.appendChild(msgContent);
 	modalMsg.appendChild(msg);
 }

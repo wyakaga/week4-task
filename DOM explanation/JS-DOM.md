@@ -19,6 +19,7 @@ DOM adalah singkatan dari _Document Object Model_. DOM merupakan antarmuka pemro
   </body>
 </html>
 ```
+![dom tree illustration](./dom-tree.png)
 
 > **Apa saja yang dapat dimanipulasi**
 
